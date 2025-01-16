@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Model Marketplace</title>
+    <link rel="stylesheet" href="/scripts/marketplace.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">AI Model Marketplace</h1>
+
+        <section id="list-model" class="form-section">
+            <h2 class="section-title">List a New Model</h2>
+            <form id="modelForm" class="model-form">
+                <input type="text" id="modelName" class="form-input" placeholder="Model Name" required>
+                <textarea id="modelDescription" class="form-textarea" placeholder="Model Description" required></textarea>
+                <input type="number" id="modelPrice" class="form-input" placeholder="Price in ETH" required>
+                <button type="submit" class="form-button">Add Model</button>
+            </form>
+        </section>
+
+        <section id="models" class="models-section">
+            <h2 class="section-title">Available Models</h2>
+            <ul id="modelsList" class="models-list"></ul>
+        </section>
+    </div>
+
+    <script src="web3.min.js"></script> 
+    <script src="app.js"></script>
+</body>
+</html>
